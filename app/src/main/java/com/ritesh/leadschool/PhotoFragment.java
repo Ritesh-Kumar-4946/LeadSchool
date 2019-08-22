@@ -395,10 +395,6 @@ public class PhotoFragment extends Fragment implements SurfaceHolder.Callback {
                 destination = new File(getPath(getActivity(), data.getData()));
                 if (bmProfileImg != null)
                     mListener.onFragmentInteraction(bmProfileImg);
-//                showLog("destination_File_Gallery", "-->   " + destination.getAbsolutePath(), "", "");
-//                if (strImageType.equalsIgnoreCase("PanCard")) {
-//                    setImage("PANCARD.png", iv_upload_pancard, bmProfileImg, "1", destination);
-//                }
             } catch (Exception ex) {
                 ex.printStackTrace();
             }

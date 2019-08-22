@@ -55,7 +55,6 @@ public class ImageFragment extends Fragment {
         if (bitmap != null) {
             resPhoto.setImageBitmap(bitmap);
             String info = "image with:" + bitmap.getWidth() + "\n" + "image height:" + bitmap.getHeight();
-//            resPhotoSize.setText(info);
             resPhotoSize.setText("Before proceeding make sure that the data on the image is not blurred and entirely visible to you. Click 'retack' if you want to upload the image again.");
         }
 
@@ -63,16 +62,14 @@ public class ImageFragment extends Fragment {
         iv_back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 getActivity().onBackPressed();
-//                getActivity().getFragmentManager().popBackStack();
-                Log.e("click","Back");
+//                Log.e("click","Back");
             }
         });
 
         btn_retake.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 getActivity().onBackPressed();
-//                getActivity().getFragmentManager().popBackStack();
-                Log.e("click","Back");
+//                Log.e("click","Back");
             }
         });
 

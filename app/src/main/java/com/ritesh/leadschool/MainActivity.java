@@ -85,10 +85,8 @@ public class MainActivity extends AppCompatActivity implements PhotoFragment.OnF
                     boolean locationAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
                     boolean cameraAccepted = grantResults[1] == PackageManager.PERMISSION_GRANTED;
                     if (locationAccepted && cameraAccepted) {
-//                        Snackbar.make(view, "Permission Granted, Now you can access location data and camera.", Snackbar.LENGTH_LONG).show();
                         make_photo_button.performClick();
                     } else {
-//                        Snackbar.make(view, "Permission Denied, You cannot access location data and camera.", Snackbar.LENGTH_LONG).show();
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                             if (shouldShowRequestPermissionRationale(WRITE_EXTERNAL_STORAGE)) {
                                 showMessageOKCancel("You need to allow access to both the permissions",
